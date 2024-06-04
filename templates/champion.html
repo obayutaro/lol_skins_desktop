@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ champion_id }} Skins</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <a href="{{ url_for('index') }}" target="_self">
+            <img src="{{ url_for('static', filename='lol_skins.png') }}" alt="LOL Skins" class="logo">
+        </a>
+    </header>
+    <div class="container">
+        <h1>{{ champion_id }} Skins</h1>
+        <ul>
+            {% for skin in skins %}
+            <li class="{{ 'owned' if skin.id|string in owned_skins or skin.id == 0 else 'not-owned' }}">
+                <img class="skin-image" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/{{ champion_id }}_{{ skin.num }}.jpg" alt="{{ skin.name }}">
+                <div class="skin.name">{{ skin.name[:20] }}</div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

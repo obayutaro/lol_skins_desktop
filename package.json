@@ -1,0 +1,15 @@
+{
+  "name": "lol_skin",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . lol_skins --platform=win32 --arch=x64 --out=dist --overwrite --icon=./lol_skin_icon.ico"
+  },
+  "dependencies": {
+    "electron": "^13.1.7"
+  },
+  "devDependencies": {
+    "@electron/packager": "^16.0.0"
+  }
+}
