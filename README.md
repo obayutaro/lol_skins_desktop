@@ -32,10 +32,12 @@ git clone https://github.com/obayutaro/lol_skins_desktop.git
 cd lol_skins_desktop
 ```
 # 実行手順  
-依存関係のインストール  
+**依存関係のインストール**  
 ```
 npm install
 ```
 
-アプリケーションのビルド  
+**アプリケーションのビルド**  
+```
 npm run package
+```
