@@ -1,7 +1,6 @@
 from flask import Flask, render_template, url_for
 import requests
 
-
 app = Flask(__name__)
 
 def get_version():
@@ -55,4 +54,4 @@ def champion(champion_id, champion_key):
     return render_template('champion.html', champion_id=champion_id, champion_key=champion_key, skins=skins, owned_skins=owned_skins)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0",debug=False)
+    app.run(host="0.0.0.0",port=5555,debug=False)

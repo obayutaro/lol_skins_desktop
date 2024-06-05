@@ -5,9 +5,11 @@
   "scripts": {
     "start": "electron .",
     "package": "electron-packager . lol_skins --platform=win32 --arch=x64 --out=dist --overwrite --icon=./lol_skin_icon.ico"
-  },
+  }
+  ,
   "dependencies": {
-    "electron": "^13.1.7"
+    "electron": "^13.1.7",
+    "tree-kill": "^1.2.2"
   },
   "devDependencies": {
     "electron-packager": "^15.4.0"
