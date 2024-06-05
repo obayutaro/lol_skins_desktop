@@ -41,3 +41,6 @@ npm install
 ```
 npm run package
 ```
+
+**アプリケーションの実行**  
+`dist/lol_skins-win32-x64`内にある`lol_skins.exe`を実行
