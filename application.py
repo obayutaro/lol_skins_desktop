@@ -40,7 +40,7 @@ def get_owned_skins():
 def index():
     version = get_version()
     champions = get_champ_data(version)
-    return render_template('index.html', champions=champions)
+    return render_template('index.html', champions=champions, version=version)
 
 @app.route('/champion/<champion_id>/<champion_key>')
 def champion(champion_id, champion_key):

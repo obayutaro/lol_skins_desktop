@@ -17,7 +17,7 @@
             {% for champion_key, champion_id, champion_name in champions %}
             <li>
                 <a href="{{ url_for('champion', champion_id=champion_id, champion_key=champion_key) }}" target="_self">
-                    <img class="champion-icon" src="https://ddragon.leagueoflegends.com/cdn/11.1.1/img/champion/{{ champion_id }}.png" alt="{{ champion_name }}">
+                    <img class="champion-icon" src="https://ddragon.leagueoflegends.com/cdn/{{ version }}/img/champion/{{ champion_id }}.png" alt="{{ champion_name }}">
                     <div class="champion-name">{{ champion_name[:5] }}</div>
                 </a>
             </li>
