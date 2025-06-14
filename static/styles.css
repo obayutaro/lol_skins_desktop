@@ -84,6 +84,15 @@ img.skin-image {
     width: 80px; /* Same width as the icon to ensure consistent truncation */
 }
 
+.skin-name {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px; /* Same width as the skin image */
+    margin-top: 5px;
+}
+
 .owned {
     filter: brightness(1.3);
     padding: 5px;
