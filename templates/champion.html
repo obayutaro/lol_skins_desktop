@@ -17,7 +17,7 @@
             {% for skin in skins %}
             <li class="{{ 'owned' if skin.id|string in owned_skins or skin.id == 0 else 'not-owned' }}">
                 <img class="skin-image" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/{{ champion_id }}_{{ skin.num }}.jpg" alt="{{ skin.name }}">
-                <div class="skin.name">{{ skin.name[:20] }}</div>
+                <div class="skin-name">{{ skin.name[:20] }}</div>
             </li>
             {% endfor %}
         </ul>
